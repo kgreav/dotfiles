@@ -57,7 +57,7 @@ Plug 'vim-syntastic/syntastic'
 " Use :Ack from vim
 Plug 'mileszs/ack.vim'
 " Wakatime stats
-Plug 'wakatime/vim-wakatime'
+" Plug 'wakatime/vim-wakatime'
 " Formatter, i.e. for prettier, black, etc
 Plug 'sbdchd/neoformat'
 Plug 'sheerun/vim-polyglot'

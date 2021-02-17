@@ -62,14 +62,14 @@ bindsym $mod+F2 exec $terminal
 bindsym $mod+F3 exec firefox
 bindsym $mod+F4 exec "brave-browser --force-device-scale-factor=1.6"
 bindsym $mod+F6 exec /opt/IntelliJ/bin/idea.sh
-bindsym $mod+Shift+F6 exec /home/alourie/Projects/scrips/start_code.sh
+bindsym $mod+Shift+F6 exec $HOME/Projects/scrips/start_code.sh
 bindsym $mod+F10 exec virt-manager
 bindsym $mod+p exec ~/.config/polybar/launch.sh
-bindsym $mod+Shift+p exec "killall picom; picom -CGb --config /home/alourie/.config/picom/picom.conf"
+bindsym $mod+Shift+p exec "killall picom; picom -CGb --config $HOME/.config/picom/picom.conf"
 bindsym $mod+Shift+f exec "GDK_SCALE=2 nautilus"
 
-bindsym $mod+a exec /home/alourie/Projects/scripts/start_vm.sh
-bindsym $mod+c exec /home/alourie/Projects/scripts/start_code.sh
+bindsym $mod+a exec $HOME/Projects/scripts/start_vm.sh
+bindsym $mod+c exec $HOME/Projects/scripts/start_code.sh
 
 
 # alternatively, you can use the cursor keys:
@@ -219,15 +219,12 @@ bindsym $mod+r mode "resize"
 
 
 # Start things when loading
-# exec --no-startup-id picom -CGb --config /home/alourie/.config/picom/picom.conf
-exec --no-startup-id /home/alourie/.config/polybar/launch.sh
+# exec --no-startup-id picom -CGb --config $HOME/.config/picom/picom.conf
+exec --no-startup-id $HOME/.config/polybar/launch.sh
 exec --no-startup-id nm-applet
 exec --no-startup-id pasystray
-exec --no-startup-id /home/alourie/.local/bin/update-monitors
-exec --no-startup-id /home/alourie/.local/bin/update-keys
-exec --no-startup-id /home/alourie/.local/bin/dunst
-exec --no-startup-id /usr/libexec/geoclue-2.0/demos/agent
-exec --no-startup-id redshift-gtk
+# exec --no-startup-id /usr/libexec/geoclue-2.0/demos/agent
+# exec --no-startup-id redshift-gtk
 exec --no-startup-id feh --bg-scale ~/.config/i3/background-frost.png
 exec --no-startup-id xss-lock -- i3lock -n -i ~/.config/i3/background-frost.png
 
@@ -236,8 +233,8 @@ exec --no-startup-id xss-lock -- i3lock -n -i ~/.config/i3/background-frost.png
 for_window [title="^Authy$"] floating enable
 
 # Gaps
-gaps inner 8
-gaps outer 2
+gaps inner 4
+gaps outer 1
 # Border
 for_window [class=".*"] border pixel 2
 client.focused  #4c7899 #285577 #ffffff #2e9ef4 #d08770
