@@ -77,3 +77,6 @@ export PATH=${PATH}:$HOME/.cabal/bin
 
 # Interactive comments
 setopt interactivecomments
+
+# Swap left and right mouse buttons
+xmodmap -e "pointer = 3 2 1";
