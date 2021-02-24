@@ -12,6 +12,7 @@ alias showbig="du -sh * | grep -e '\dG'"
 alias xo=xdg-open
 alias nn="notify-send \"all done\" -t 3000"
 alias config='/usr/bin/git --git-dir=$HOME/.dots/ --work-tree=$HOME'
+alias sudo='sudo '
 
 # alias edc='nvim ~/.ssh/config'
 # alias edcp='nvim ~/.ssh/prod-config'
@@ -54,7 +55,7 @@ export PATH="${PATH}:/home/alourie/.local/bin"
 # Golang
 export GO111MODULE=on
 export GOROOT=""
-export GOROOT=`go env GOROOT`
+# export GOROOT=`go env GOROOT`
 export GOPATH=$HOME/Projects/gospace
 export GOSRC="${GOPATH}/src"
 export PATH=${PATH}:${GOPATH}/bin
